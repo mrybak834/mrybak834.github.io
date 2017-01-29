@@ -92,7 +92,7 @@ footer {
 
 footer .col-sm-8 {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 footer ul {
@@ -100,6 +100,8 @@ footer ul {
 }
 
 footer li img {
+  width: 1rem;
+  height: 1rem;
   max-width: 1rem;
   max-height: 1rem;
 }
