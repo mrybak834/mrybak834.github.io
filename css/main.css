@@ -36,6 +36,12 @@ header p {
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron h2 {
@@ -99,5 +105,3 @@ footer .col-sm-8 {
 footer ul {
   list-style: none;
 }
-
-
