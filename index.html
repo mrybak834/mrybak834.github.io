@@ -13,22 +13,23 @@
 <body>
   <header class="container">
     <div class="row">
-      <h1 class="col-sm-4">Portfolio</h1>
+      <p class="btn-lg col-sm-4" id="linkPortfolio">Portfolio</p>
       <nav class="col-sm-8 text-right">
-        <p>About</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <p class="btn" id="linkProjects">Projects</p>
       </nav>
     </div>
   </header>
-  <section class="jumbotron">
+  <section class="jumbotron" id="page-main">
     <div class="container-fluid">
       <div class="row-fluid text-center">
         <h2>Marek Rybakiewicz</h2>
         <h4>Software Developer</h4>
-        <a class="btn btn-primary" href="#" role="button">Story</a>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal">Story</button>
       </div>
     </div>
+  </section>
+  <section class="container" id="page-projects">
   </section>
   <section class="container">
     <footer class="container">
@@ -45,13 +46,29 @@
       </div>
     </footer>
   </section>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header card-header-title">
+          <h4 class="modal-title card-element-title text-center">Marek Rybakiewicz</h4>
+        </div>
+        <div class="modal-body">
+          <div class="card-content clearfix">
+            <div class="card modal-description">I am technology. I am who you wish you were. Sleek, modern, stylized, the perfect Online Man.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 
 </html>

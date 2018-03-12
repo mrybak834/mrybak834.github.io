@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    /* background: rgba(255, 249, 249, 0.342); */
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 
 header {
     padding: 1rem 0rem;
+    color: rgb(97, 82, 85);
 }
 
 header .row,
@@ -130,4 +132,32 @@ footer ul {
 .centering {
     float: none;
     margin: 0 auto;
+}
+
+.card {
+}
+
+.card-header-title {
+    background: #f4f4f4;
+}
+
+.card-element-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    text-shadow: 0 0 1rem #4d3138;
+}
+
+.modal-description {
+    color: rgb(68, 67, 67);
+    text-shadow: 0 0 1rem #4d3138;
+}
+
+#page-projects {
+    padding: 0.01em;
+}
+
+.card-project {
+    background-color: rgba(248, 214, 226, 0.308);
 }
