@@ -161,3 +161,7 @@ footer ul {
 .card-project {
     background-color: rgba(248, 214, 226, 0.308);
 }
+
+.clickable {
+    cursor: pointer;
+}

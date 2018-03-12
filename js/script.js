@@ -17,10 +17,17 @@ $(document).ready(function() {
         var card = '';
         $.each(data, function(index, value) {
             // value.name value.description
+
+            if (value.language == null || value.language == 'null') {
+                value.language = 'Various Languages';
+            }
+
             text =
                 '<div class="col-lg-3 col-md-6 col-sm-12"><div class="card card-project" style="width: 18rem;"><div class="card-body"><h5 class="card-title">' +
                 value.name +
-                '</h5><h6 class="card-subtitle mb-2 text-muted">Software</h6><p class="card-text">' +
+                '</h5><h6 class="card-subtitle mb-2 text-muted">' +
+                value.language +
+                '</h6><p class="card-text">' +
                 value.description +
                 '</p><a href="' +
                 value.html_url +
